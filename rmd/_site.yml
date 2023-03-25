@@ -1,4 +1,4 @@
-name: "OMOP <user_group>"
+name: "OHDSI [user_group]"
 output_dir: "../docs"
 output:
   html_document:
@@ -8,18 +8,21 @@ output:
       in_header: "favicon.html"
 exclude: ["extras"]
 navbar:
-  title: '<div><img src="ohdsi16x16.png"></img> OMOP <user_group> </div>'
+  title: '<div><img src="ohdsi16x16.png"></img> OHDSI [user_group] </div>'
   right:
     - icon: fa-github
       href: https://github.com/OHDSI/<user_group>
   left:
-    - text: "Applications"
+    - text: "Background"
       icon: fa-landmark
-      href: applications.html
-    - text: "Documentation"
+      href: background.html
+    - text: "Supported OHDSI Tools"
+      icon: fa-list
+      href: supported.html
+    - text: "Getting Started"
       icon: fa-list
       menu:
-        - text: "gaiaCore"
-          href: "gaiaCore/index.html"
-        - text: "gaiaDB"
-          href: "gaiadb.html"
+        - text: "ETL Conventions"
+          href: "etl.html"
+        - text: "Connecting OHDSI Tools"
+          href: "connecting.html"
