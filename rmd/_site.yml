@@ -1,0 +1,25 @@
+name: "OMOP <user_group>"
+output_dir: "../docs"
+output:
+  html_document:
+    theme: cosmo
+    css: style.css
+    includes:
+      in_header: "favicon.html"
+exclude: ["extras"]
+navbar:
+  title: '<div><img src="ohdsi16x16.png"></img> OMOP <user_group> </div>'
+  right:
+    - icon: fa-github
+      href: https://github.com/OHDSI/<user_group>
+  left:
+    - text: "Applications"
+      icon: fa-landmark
+      href: applications.html
+    - text: "Documentation"
+      icon: fa-list
+      menu:
+        - text: "gaiaCore"
+          href: "gaiaCore/index.html"
+        - text: "gaiaDB"
+          href: "gaiadb.html"
